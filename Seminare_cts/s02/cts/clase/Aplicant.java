@@ -8,7 +8,25 @@ public abstract class Aplicant{
 	protected int nrProiecte;
 	protected String[] denumireProiect;
 	
+	public String[] getDenumireProiect() {
+		return denumireProiect;
+	}
+	public void setNr_proiecte(int nrProiecte,String[] denumireProiect) {
+		this.nrProiecte=nrProiecte;
+		this.denumireProiect=new String[this.nrProiecte];
+		for(int i=0;i<this.nrProiecte;i++) {
+			this.denumireProiect[i] = denumireProiect[i];
+		}
+	}
+
+	protected static int pragAcceptare=80;
 	
+	public static int getPragAcceptare() {
+		return pragAcceptare;
+	}
+	public static void setPragAcceptare(int pragAcceptare) {
+		Aplicant.pragAcceptare = pragAcceptare;
+	}
 	public String getNume() {
 		return nume;
 	}
@@ -27,21 +45,15 @@ public abstract class Aplicant{
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
-	public void statut(){
-		if(punctaj>80)
-			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
-		else
-			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
-		}
+	public void afisareStatut(){
+		System.out.println("Aplicantul "+nume+" "+prenume+ (punctaj<pragAcceptare? "nu" : " ") + "a fost acceptat.");
+	}
 	public int getPunctaj() {
 		return punctaj;
 	}
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
-	
-	
-
 	
 	public Aplicant() {
 		super();
@@ -61,6 +73,13 @@ public abstract class Aplicant{
 	}
 	public void setNr_proiecte(int nr_proiecte) {
 		this.nrProiecte = nr_proiecte;
+	}
+	
+	public abstract void afisareFinantare();
+	
+	protected void afisareFinantare(String tipAplicant, int sumaFinantare) {
+		// TODO Auto-generated method stub
+		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+sumaFinantare+" Euro/zi in proiect.");
 	}
 
 }
