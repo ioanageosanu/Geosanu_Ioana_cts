@@ -19,8 +19,8 @@ public class Main {
 		infirmier.setAnVechime(15);
 		
 		List<PersonalSpital> listaPersonal=new ArrayList<>();
-		listaPersonal.add((PersonalSpital) ((cts.factory_method.Factory) fabricaAsistenti).createPersonal("Popescu"));
-		listaPersonal.add((PersonalSpital) ((cts.factory_method.Factory) fabricaAsistenti).createPersonal("Ionescu"));
+		listaPersonal.add( fabricaAsistenti.createPersonal("Popescu"));
+		listaPersonal.add(fabricaAsistenti.createPersonal("Ionescu"));
 		listaPersonal.add(infirmier);
 		for(PersonalSpital personal: listaPersonal) {
 			personal.descriere();
