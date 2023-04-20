@@ -15,6 +15,7 @@ public class Program {
 		solutii.put("Acid salicilic", (float) 20);
 		solutii.put("Acid azotic", (float) 30);
 		solutii.put("Clorura de potasiu", (float) 10);
+		
 		IReteta prototype=new Reteta("Reteta",solutii,60);
 		Reteta farmacie=(Reteta)prototype.copiazaReteta();
 		farmacie.setNume("Reteta farmaciei");

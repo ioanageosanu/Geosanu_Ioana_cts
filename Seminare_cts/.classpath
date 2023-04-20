@@ -9,5 +9,7 @@
 	<classpathentry kind="src" path="s04"/>
 	<classpathentry kind="src" path="s05"/>
 	<classpathentry kind="src" path="s06"/>
+	<classpathentry kind="src" path="repetare"/>
+	<classpathentry kind="src" path="s08"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
