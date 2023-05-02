@@ -1,7 +1,5 @@
 package cts.flyweight.main;
 
-import java.util.zip.ZipEntry;
-
 import cts.flyweight.clase.FabricaClienti;
 import cts.flyweight.clase.IClient;
 import cts.flyweight.clase.Rezervare;

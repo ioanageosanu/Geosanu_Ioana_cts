@@ -31,7 +31,7 @@ public class Restaurant implements Subject{
 	public void notificaAbonati(String mesaj) {
 		// TODO Auto-generated method stub
 		for(Observer clientiAbonati:this.clientiAbonati) {
-			clientiAbonati.receptioneazaNotificare(mesaj);;
+			clientiAbonati.receptioneazaNotificare(mesaj);
 		}
 	}
 	public void notificaOfertaPret() {

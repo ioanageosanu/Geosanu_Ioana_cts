@@ -14,5 +14,6 @@
 	<classpathentry kind="src" path="s09"/>
 	<classpathentry kind="src" path="s10"/>
 	<classpathentry kind="src" path="s11"/>
+	<classpathentry kind="src" path="s11_suplimentar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
