@@ -1,4 +1,4 @@
-package cts.clase;
+package s02.cts.clase;
 
 import java.util.Arrays;
 
