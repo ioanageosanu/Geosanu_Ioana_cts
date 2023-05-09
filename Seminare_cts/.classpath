@@ -11,5 +11,8 @@
 	<classpathentry kind="src" path="s06"/>
 	<classpathentry kind="src" path="repetare"/>
 	<classpathentry kind="src" path="s08"/>
+	<classpathentry kind="src" path="s09"/>
+	<classpathentry kind="src" path="s10"/>
+	<classpathentry kind="src" path="s11"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
