@@ -38,6 +38,6 @@ public class Restaurant implements Subject{
 		this.notificaAbonati(numeRestaurant + "Sunt reduceri de pret la shaorma");
 	}
 	public void notificaSchimbareMeniu() {
-		notificaAbonati(numeRestaurant+" Avem produse noi la fructe de mare");
+		this.notificaAbonati(numeRestaurant+" Avem produse noi la fructe de mare");
 	}
 }
