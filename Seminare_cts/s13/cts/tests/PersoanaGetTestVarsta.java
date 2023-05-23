@@ -40,4 +40,10 @@ public class PersoanaGetTestVarsta {
 		Persoana p=new Persoana("Tiberiu","4991231046230");
 		p.getVarsta();
 	} 
+	
+	@Test(timeout=100)
+	public void getVarstaTimeout() {
+		Persoana p=new Persoana("Tiberiu","4991231046230");
+		p.getVarsta();
+	} 
 }
